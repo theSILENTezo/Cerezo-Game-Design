@@ -20,18 +20,29 @@
         font-weight: 400;
         font-style: 16px;
         text-align: left;
-        color: #64709e;
+        color: #cb54db;
+        margin-bottom: 4px;
+    }
+
+    h2{
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: 16px;
+        text-align: left;
+        color: #9f53db;
         margin-bottom: 4px;
     }
 
     p{
+        font-family: "Lato", ;
         color: #d5d8e3;
         margin-left: 50px;
         text-align: left;
     }
 
     .current-page{
-        color: #c7962e;
+        color: #9f53db;
+        /*c7962e*/
     }
 /*Home Page*/
     .welcome-in{
@@ -68,7 +79,7 @@
     }
 
     .nav-links li a:hover{
-        color: #64709e;
+        color: #d385de;
         text-decoration: underline;
     }
 
@@ -79,8 +90,8 @@
 
     button{
         padding: 9px 25px;
-        background-color: #64709e;
-        border: #64709e;
+        background-color: #d385de;
+        border: #d385de;
         color: whitesmoke;
         border-radius: 50px;
         cursor: pointer;
@@ -89,7 +100,7 @@
 
     button:hover{
         background-color: #bec2d1;
-        color: #64709e;
+        color: #9f53db;
     }
 
 /*flex box items*/
@@ -161,8 +172,8 @@
     }
 
     .submit-form{
-        border: #3c65b9;
-        background-color: #3c65b9;
+        border: #db5355;
+        background-color: #db5355;
         padding: 12px 20px;
         border-radius: 8px;
         color: white;
