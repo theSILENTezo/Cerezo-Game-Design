@@ -89,7 +89,7 @@
         bottom: 8px;
         left: 9px;
         right: 9px;
-    
+        position: fixed;
     }
 
     .nav-icon:hover{
@@ -152,6 +152,14 @@
 
 /*contact form*/
  
+    .hypeLink{
+        color: #d385de;
+    }
+
+    .hypeLink:hover{
+        color: #9f53db;
+    }
+
     .form{
         margin: 100px auto;
         display: block;
