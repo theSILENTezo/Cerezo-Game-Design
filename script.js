@@ -14,10 +14,10 @@
         var projectHover = loadImage('project-hover.png');
 
 /* Footer Icons */
-    var instagram = loadImage('instagram-icon.png');
-    var meta = loadImage('meta-icon.png');
-    var linkedin = loadImage('linkedin-icon.png');
-    var youtube = loadImage('youtube-icon.png');
+    var instagramIcon = loadImage('instagram-icon.png');
+    var metaIcon = loadImage('meta-icon.png');
+    var linkedinIcon = loadImage('linkedin-icon.png');
+    var youtubeIcon = loadImage('youtube-icon.png');
 
     /* Hover */
         var instagramHover = loadImage('instagram-hover.png');
@@ -27,4 +27,14 @@
 
 /* Contact Form */
     function messageSent(){
+    }
+
+
+/* Icon Functions */
+    function hoverState(){
+
+    }
+
+    function activeState(){
+
     }
