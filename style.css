@@ -60,6 +60,7 @@
         background-color: #1c1c1c;
         /*#262b40*/
         border: 1px #cccccc;
+        float: none;
     }
 
     .logo{
@@ -218,4 +219,13 @@
 
     .center-me{
         text-align: center;
+    }
+
+/* Responsive */
+    @media screen and (max-width: 768px) {
+        .nav-links{
+            float: none;
+            clear: left;
+            width: 100%;
+        }
     }
