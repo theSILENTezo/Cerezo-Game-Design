@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+/* Imported Text */
+    @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
 /*Page Universal items*/
     *{
         box-sizing: border-box;
@@ -25,7 +28,7 @@
     }
 
     h2{
-        font-family: "Anta", sans-serif;
+        font-family: "Bubblegum Sans", sans-serif;
         font-weight: 400;
         font-style: 16px;
         text-align: left;
@@ -48,6 +51,58 @@
     .welcome-in{
         text-align: center;
     }
+
+    /* Latest Project Banner */
+        .image-container{
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-container img{
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .overlay-text h2{
+            position: absolute;
+            top: 20%;
+            left: 15%; 
+            transform: translate(-50%, -50%); 
+            background-color: transparent;
+            color: white; 
+            padding: 0; 
+            font-size: 50px; 
+            text-align: left;
+        }
+
+        .overlay-text p{
+            position: absolute;
+            top: 45%;
+            left: 17%; 
+            transform: translate(-50%, -50%); 
+            background-color: transparent;
+            color: white; 
+            padding: 0; 
+            font-size: 20px; 
+            text-align: left;
+        }
+
+        .overlay-text button{
+            position: absolute;
+            top: 75%;
+            left: 11%;
+            transform: translate(-50%, -50%); 
+            background-color: #E69800;
+            color: white; 
+            padding: 10px 20px; 
+            font-size: 20px; 
+            text-align: left;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0;
+        }
 
 
 /*Nav Bar*/
@@ -131,6 +186,7 @@
         text-align: center;
     }
 
+/* Project Images */
     .card{
         margin: 20px 20px;
         width: 200px;
@@ -223,7 +279,21 @@
 
 /* Responsive */
     @media screen and (max-width: 768px) {
-        .nav-links{
+        .nav-links ul li{
+            float: none;
+            clear: left;
+            width: 100%;
+        }
+
+        .nav-icon{
+            float: none;
+            clear: left;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .nav-links ul li{
             float: none;
             clear: left;
             width: 100%;
