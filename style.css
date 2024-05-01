@@ -1,7 +1,5 @@
-/* Imported Text */
-    @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 /*Page Universal items*/
     *{
         box-sizing: border-box;
@@ -37,9 +35,10 @@
     }
 
     p{
-        font-family: "Lato", ;
+        font-family: "Lato", sans-serif;
         color: #d5d8e3;
         margin-left: 50px;
+        margin-right: 50px;
         text-align: left;
     }
 
@@ -52,59 +51,6 @@
         text-align: center;
     }
 
-    /* Latest Project Banner */
-        .image-container{
-            position: relative;
-            display: inline-block;
-        }
-
-        .image-container img{
-            display: block;
-            width: 100%;
-            height: auto;
-            margin-top: 20px;
-        }
-
-        .overlay-text h2{
-            position: absolute;
-            top: 20%;
-            left: 15%; 
-            transform: translate(-50%, -50%); 
-            background-color: transparent;
-            color: white; 
-            padding: 0; 
-            font-size: 50px; 
-            text-align: left;
-        }
-
-        .overlay-text p{
-            position: absolute;
-            top: 45%;
-            left: 17%; 
-            transform: translate(-50%, -50%); 
-            background-color: transparent;
-            color: white; 
-            padding: 0; 
-            font-size: 20px; 
-            text-align: left;
-        }
-
-        .overlay-text button{
-            position: absolute;
-            top: 75%;
-            left: 11%;
-            transform: translate(-50%, -50%); 
-            background-color: #E69800;
-            color: white; 
-            padding: 10px 20px; 
-            font-size: 20px; 
-            text-align: left;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease 0;
-        }
-
-
 /*Nav Bar*/
     header{
         height: 100px;
@@ -112,7 +58,7 @@
         display: flex;
         justify-content: space-between;
         padding: 20px 10%;
-        background-color: #1c1c1c;
+        background-color: #2B2929;
         /*#262b40*/
         border: 1px #cccccc;
         float: none;
@@ -177,16 +123,14 @@
     }
 
 /*flex box items*/
-    .container{
+    .contain{
         margin: 20px auto;
         border: 1px solid #bec2d1;
         width: 100%;
-        height: 600px;
         display: block;
         text-align: center;
     }
 
-/* Project Images */
     .card{
         margin: 20px 20px;
         width: 200px;
@@ -206,6 +150,28 @@
             /*"all" = allows all the images to function as so*/
         opacity: 80%;
     }
+
+    /* Project Images */
+    .card{
+        margin: 20px 20px;
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .card > img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .card > img:hover{
+        transform: scale(1.3);
+        transition: all 0.2s ease-in-out;
+            /*"all" = allows all the images to function as so*/
+        opacity: 80%;
+    }
+
 
 /*contact form*/
  
@@ -275,27 +241,4 @@
 
     .center-me{
         text-align: center;
-    }
-
-/* Responsive */
-    @media screen and (max-width: 768px) {
-        .nav-links ul li{
-            float: none;
-            clear: left;
-            width: 100%;
-        }
-
-        .nav-icon{
-            float: none;
-            clear: left;
-            width: 100%;
-        }
-    }
-
-    @media screen and (max-width: 480px) {
-        .nav-links ul li{
-            float: none;
-            clear: left;
-            width: 100%;
-        }
     }

@@ -4,59 +4,136 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="scipt.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <title>Cerezo Game Design: Projects</title>
     </head>
-    <body>
+    <body style="background-color: #2B2929;">
         <!--Navigation Bar-->
             <header>
-                <image class="logo" src="images/logo.png" alt="Cerezo Game Design Logo">
-                    
-                <nav>
-                    <ul class="nav-links">
-                        <li>
-                            <img class="nav-icon" src="images/home-icon.png" alt="Home Page Icon">
-                            <a rel="index" href="index.html">Home</a>
-                        </li>
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
+                <div class="container-fluid">
+                  <a href="index.html">
+                    <image class="navbar-brand logo" src="images/logo.png"></image>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <ul class="nav-links">
+                            <li>
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
 
-                        <li>
-                            <img class="nav-icon" src="images/about-icon.png" alt="About Page Icon">
-                            <a rel="index" href="about.html">About Me</a>
-                        </li>
+                            <li>
+                                <a class="nav-link" href="about.html">About Me</a>
+                            </li>
 
-                        <li>
-                            <img class="nav-icon" src="images/project-icon.png" alt="Projects Page Icon">
-                            <a class="current-page" rel="index" href="projects.html">Projects</a>
-                        </li>
-                    </ul>
-                </nav>
+                            <li>
+                                <a class="nav-link active current-page" href="projects.html">Projects</a>
+                            </li>
+                        </ul>
 
-                <a class="cta" href="contact.html">
-                    <button>Contact</button>
-                </a>
+                        <a class="cta" href="contact.html">
+                            <button>Contact</button>
+                        </a>
+
+                    </div>
+                  </div>
+                </div>
+              </nav>
             </header>
 
         <!--Main Page Items-->
-            <div class="container">
-                <div class="card">
-                    <img src="images/game cube.png">
-                </div>
-
-                <div class="card">
-                    <img src="images/game cube.png">
-                </div>
-
-                <div class="card">
-                    <img src="images/game cube.png">
-                </div>
-
-                <div class="card">
-                    <img src="images/game cube.png">
-                </div>
-
-                <div class="card">
-                    <img src="images/game cube.png">
-                </div>
+            <div class="contain container mt-5">
+              <h1 class="welcome-in mt-3" style="color: #cb54db;">Projects</h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card">
+                        <img src="images/jeris-preview.png" class="card-img-top" alt="jeris-preview">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-family: Lato, sans-serif; font-style: italic; color: white;">Project Jeris (2024)</h5>
+                          <p class="card-text">[Game Map/Environment]</p>
+                          <a href="#" class="btn" style="color: white; font-family: Anta , sans-serif;">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="images/animarium-preview.png" class="card-img-top" alt="animarium-preview">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-family: Lato, sans-serif; font-style: italic; color: white;">Animarium (2023)</h5>
+                          <p class="card-text">[3D Model/Asset]</p>
+                          <a href="#" class="btn" style="color: white; font-family: Anta , sans-serif;">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="images/space_station-preview.png" class="card-img-top" alt="Space Station Salvation Preview">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-family: Lato, sans-serif; font-style: italic; color: white;">Space Station Salvation (2023)</h5>
+                          <p class="card-text">[Video Game]</p>
+                          <a href="#" class="btn" style="color: white; font-family: Anta , sans-serif;">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="images/gorilla_run-preview.png" class="card-img-top" alt="Gorilla Run Preview">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-family: Lato, sans-serif; font-style: italic; color: white;">Gorilla Run (2022)</h5>
+                          <p class="card-text">[Board Game]</p>
+                          <a href="#" class="btn" style="color: white; font-family: Anta , sans-serif;">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="images/picnic-preview.png" class="card-img-top" alt="Picninc Preview">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-family: Lato, sans-serif; font-style: italic; color: white;">Picnic (2022)</h5>
+                          <p class="card-text">[Augmented Reality]</p>
+                          <a href="#" class="btn" style="color: white; font-family: Anta , sans-serif;">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="images/just_a_few-preview.png"class="card-img-top" alt="Gorilla Run Preview">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-family: Lato, sans-serif; font-style: italic; color: white;">Just A Few (2021)</h5>
+                          <p class="card-text">[Augmented Reality]</p>
+                          <a href="#" class="btn" style="color: white; font-family: Anta , sans-serif;">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
+
+            <footer class="footer mt-auto pt-10 pb-10 py-3 bg-dark">
+              <div class="container">
+                  <span style="color: #cb54db;">Copyright&copy 2024 Cerezo Game Design - All Rights Reserved</span>
+                  <a href="https://instagram.com/thesilentezo" target="_blank">
+                      <img src="images/instagram-icon.png" width="5%" height="5%" alt="instagram/theSILENTc" style="justify-content: space-between;" >
+                  </a>
+                      
+                  <a href="">
+                      <img src="images/meta-icon.png" width="5%" height="5%" alt="meta/Simon Cerezo" style="justify-content: space-between;">
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/simon-cerezo-3193221b4/" target="_blank">
+                      <img src="images/linkedin-icon.png" width="5%" height="5%" alt="linkedIn/Simon Cerezo" style="justify-content: space-between;">
+                  </a>
+
+                  <a href="https://www.youtube.com/channel/UCZXnBtbbb8BnG2wH4E-xGBw" target="_blank">
+                      <img src="images/youtube-icon.png" width="5%" height="5%" alt="youtube/theSILENtc" style="justify-content: space-between;">
+                  </a>
+              </div>
+          </footer>
+
+        <script src="scipt.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
     </body>
 </html>

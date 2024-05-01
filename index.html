@@ -4,68 +4,128 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="scipt.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <title>Cerezo Game Design</title>
     </head>
-    <body>
+    <body style="background-color: #2B2929;">
         <!--Navigation Bar-->
             <header>
-                <image class="logo" src="images/logo.png" alt="Cerezo Game Design Logo">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
+                    <div class="container-fluid">
+                        <a href="index.html">
+                            <image class="navbar-brand logo" src="images/logo.png"></image>
+                        </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav">
+                            <ul class="nav-links">
+                                <li>
+                                    <a class="nav-link active current-page" aria-current="page" href="index.html">Home</a>
+                                </li>
 
-                <nav>
-                    <ul class="nav-links">
-                        <li>
-                            <a class="current-page" rel="index" href="index.html">Home</a>
-                        </li>
+                                <li>
+                                    <a class="nav-link" href="about.html">About Me</a>
+                                </li>
 
-                        <li>
-                            <a rel="index" href="about.html">About Me</a>
-                        </li>
+                                <li>
+                                    <a class="nav-link" href="projects.html">Projects</a>
+                                </li>
+                            </ul>
 
-                        <li>
-                            <a rel="index" href="projects.html">Projects</a>
-                        </li>
-                    </ul>
-                </nav>
+                            <a type="button" class="cta" href="contact.html">
+                                <button>Contact</button>
+                            </a>
 
-                <a class="cta" href="contact.html">
-                    <button>Contact</button>
-                </a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
             </header>
 
+
         <!--Main Page Items-->
-            <div class="container">
-                <h1 class="welcome-in">Welcome to my portfolio!</h1>
+            <div class="container contain mt-5 mb-5">
+                <h1 class="welcome-in mt-3" style="color: #cb54db;">Welcome to my portfolio!</h1>
                     <p>
                         Hello, my name is Simon Cerezo and welcome to my web portfolio. I am an Interaction/Game Designer based in San Jose, California.
-                        <br>
-                        To Find out more about me, click the <link>"About Me"</link> tab in the navbar.
-                        <br>
-                        Feel free to look around my site, and press the "contact" button to reach out to me.
+                        The goal of this site is to not only showcase my various projects I have completed, but to also display my skills, such as coding.
+                        Thats right, this entire site is designedand created by me.
+                        To Find out more about me, click the <a class="hypeLink" href="about.html" style="text-decoration: none;">"About Me"</a> tab in the navbar.
+                        Feel free to look around my site, and press the <a class="hypeLink" href="contact.html" style="text-decoration: none;">"Contact"</a> button to reach out to me.
                     </p>
-                
-                <div class="image-container">
-                    <h1>Latest Project</h1>
-                    <img src="images/Project Jeris Banner.png">
-                    <div class="overlay-text">
-                        <h2>Project Jeris</h2>
-                        <br>
-                        <p>
-                            Project Jeris is asingle-player walking simulator<br>
-                            whose primary objective is to immerses the <br>
-                            player in a nature-infused sci-fi environment<br>
-                            and lets them explore an abandoned facility they <br>
-                            happen to stumble upon.<br>
-                        </p>
-                        <br>
-                        <button>Learn More</button>
-                    </div>
-                </div>
 
+                <!--Latest Project Section--> 
+                    <h1 style="color: #cb54db; text-align: center;">Latest Project</h1>
+                        <div class="card text-white img-fluid-overlay" style="font-family: Bubblegum Sans, sans-serif;
+                        font-weight: 400; font-style: 16px;text-align: left;">
+                            <img src="images/project-jeris-banner.png" class="card-img img-fluid" alt="Project Jeris Screenshot">
+                            <div class="card-img-overlay">
+                                <h2 class="card-title">Project Jeris</h2>
+                                <p class="card-text">
+                                    Project Jeris is asingle-player walking simulator<br>
+                                    whose primary objective is to immerses the <br>
+                                    player in a nature-infused sci-fi environment<br>
+                                    and lets them explore an abandoned facility they <br>
+                                    happen to stumble upon.<br>
+                                </p>
+                            </div>
+                        </div>
+
+                <!--Highlighted Projects Section-->    
+                    <h1 style="color: #cb54db;text-align: center;">Highlighted Projects</h1>
+                        <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner mb-5">
+                                <div class="carousel-item active">
+                                    <img src="images/slideshow1.png" class="d-block w-100" alt="Gorilla Run">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/slideshow2.png" class="d-block w-100" alt="Space Station Salvation">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/slideshow3.png" class="d-block w-100" alt="Picnic">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
             </div>
 
-            <h1>Latest Project</h1>
+            <footer class="footer mt-auto pt-10 pb-10 py-3 bg-dark">
+                <div class="container">
+                    <span style="color: #cb54db;">Copyright&copy 2024 Cerezo Game Design - All Rights Reserved</span>
+                    <a href="https://instagram.com/thesilentezo" target="_blank">
+                        <img src="images/instagram-icon.png" width="5%" height="5%" alt="instagram/theSILENTc" style="justify-content: space-between;" >
+                    </a>
+                        
+                    <a href="">
+                        <img src="images/meta-icon.png" width="5%" height="5%" alt="meta/Simon Cerezo" style="justify-content: space-between;">
+                    </a>
 
-            
+                    <a href="https://www.linkedin.com/in/simon-cerezo-3193221b4/" target="_blank">
+                        <img src="images/linkedin-icon.png" width="5%" height="5%" alt="linkedIn/Simon Cerezo" style="justify-content: space-between;">
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCZXnBtbbb8BnG2wH4E-xGBw" target="_blank">
+                        <img src="images/youtube-icon.png" width="5%" height="5%" alt="youtube/theSILENtc" style="justify-content: space-between;">
+                    </a>
+                </div>
+            </footer>
+
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="scipt.js"></script>
     </body>
 </html>
