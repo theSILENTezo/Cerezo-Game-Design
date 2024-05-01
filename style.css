@@ -172,6 +172,15 @@
         opacity: 80%;
     }
 
+    .link-it{
+        text-decoration: none;
+        color: white;
+    }
+
+    .link-it:hover{
+        color: #d385de;
+    }
+
 
 /*contact form*/
  
