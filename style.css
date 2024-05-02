@@ -181,6 +181,10 @@
         color: #d385de;
     }
 
+    .project-b:hover{
+        color: #d385de;
+    }
+
 
 /*contact form*/
  
@@ -250,4 +254,34 @@
 
     .center-me{
         text-align: center;
+    }
+
+/* Footer */
+    .social:hover{
+        background-color: #d385de;
+        border-radius: 50%;
+    }
+
+    .return-top{
+        color: #cb54db;
+        text-decoration: none;
+        align-items: center;
+    }
+
+    .return-top:hover{
+        color: #9f53db;
+    }
+
+    .center{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+/* banner */
+    .jer{
+        font-family: Bubblegum Sans, sans-serif;
+        font-weight: 400; 
+        font-style: 16px;
+        text-align: left;
     }
